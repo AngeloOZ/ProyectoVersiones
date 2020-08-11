@@ -1,0 +1,553 @@
+:root{
+    --primary-color: #007bff;
+    --primary-dark: #0069d9;
+    --primary-dark-2: #005cbf;
+    --primary-alert: #002752;
+    /* --success-alert: #0b2e13; */
+    --danger-color: #Dc3545;
+    --danger-dark: #c82333;
+    --danger-dark-2: #bd2130;
+    --danger-alert: #491217;
+    --info-color: #17A2Bb;
+    --light-dark: #e2e6ea;
+
+    --alert-success: #DAEDDA;
+    --alert-success-color: #155724;
+    --alert-danger: #F8D7DA;
+    --alert-danger-color: #721C24;
+    --alert-warning: #FFF3CD;
+    --alert-warning-color: #856404;
+    --alert-info: #D1ECF1;
+    --alert-info-color: #0C5460;
+    --alert: #CCE5FF;
+    --alert-color: #004085;
+
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 utilidades                                 */
+/* -------------------------------------------------------------------------- */
+body{
+    background-color: #f4f4f4;
+}
+.text-center {
+    text-align: center;
+}
+.mx-width{
+    max-width: 1100px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 25px;
+}
+.alert{
+    text-align: center;
+    background-color: var(--alert);
+    color: var(--alert-color);
+    margin: 0px 0;
+    border-radius: 10px;
+    width: 100%;
+    line-height: 10px;
+    height: 70px;
+    /* height: auto; */
+    padding: 20px;
+}
+.alert-success{
+    background-color: var(--alert-success);
+    color: var(--alert-success-color);
+}
+.alert-warning{
+    background-color: var(--alert-warning);
+    color: var(--alert-warning-color);
+}
+.alert-danger{
+    background-color: var(--alert-danger);
+    color: var(--alert-danger-color);
+}
+.contenedor-form>h1 {
+    display: block;
+    color: #007bff;
+    text-align: center;
+    font-weight: 700;
+}
+.form-registro{
+    margin: auto;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.btn-inicio {
+    display: inline-block;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 8px;
+}
+
+.btn-inicio:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.icon-group {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #495057;
+    width: 40px;
+    height: 40px;
+    border: solid 1px;
+    font-weight: 400;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+/* Pantalla principal */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+.contenedor-botones {
+    display: grid;
+    grid-column-gap: 150px;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-option {
+    padding: 15px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-back:hover,
+.btn-add:hover,
+.btn-option:hover {
+    background-color: #234a74;
+}
+
+.text-inicio {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-inicio>i {
+    font-size: 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Seccion productos                             */
+/* -------------------------------------------------------------------------- */
+.add {
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-add {
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    width: 175px;
+    border: none;
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.btn-add span i{
+    font-size: 20px;
+}
+.btn-back{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.btn-back i{
+    color: white;
+    font-size: 30px;
+}
+
+.table {
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.table th,td {
+    padding: 15px;
+}
+
+.table tbody tr:not(:last-child) {
+    border-bottom: solid 2px #BDBDBD;
+}
+
+.table thead {
+    background-color: #f1f1f1;
+    color: black;
+    border-bottom: solid 2px #9e9e9e;
+    border-top: solid 2px #BDBDBD;
+}
+.table tbody{
+    background-color: #f1f1f1;
+}
+.btn-action{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.btn-action .btn{
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 1px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+    outline: none;
+}
+.btn-edit{
+    background-color: var(--info-color);
+}
+.btn-delete{
+    background-color:  var(--danger-color);
+}
+.table tbody tr:nth-child(odd){
+    background-color: #e0e0e0;
+}
+.btn-edit:hover,
+.btn-delete:hover{
+    filter: brightness(70%);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              estilos de popup                              */
+/* -------------------------------------------------------------------------- */
+.overlay{
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: 0.5s ease all;
+}
+.overlay.active{
+    visibility: visible;
+}
+.popup{
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .8);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;  
+    transition: .5s ease all;  
+    transform: scale(0.7); 
+}
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}
+.popup .btn-cerrar-popup:hover{
+    color: #000;
+}
+.popup h3,
+.editar-form h3{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.popup form .contenedor-imput{
+    opacity: 0;
+}
+.form-group-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-group-edit .double{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.form-group-edit .double input{
+    max-width: 50%;
+}
+.form-group-edit .double select{
+    margin-top: -10px;
+    width: 50%;
+    max-width: 50%;
+    height: 28px;
+    font-size: 15px;
+}
+.form-group-edit label{
+    display: block;
+    width: 25%;
+    text-align: left;
+}
+.form-group-edit input{
+    width: 70%;
+    height: 30px;
+    font-size: 15px;
+    line-height: 52px;
+    border: 1px solid #bbbbbb;
+    outline: none;
+}
+.form-group-edit input:focus{
+    box-shadow: 0 0 5px 3px var(--light-dark-2);
+}
+.form-group-edit textarea{
+    width: 70%;
+    resize: none;
+    height: 80px;
+    border: 1px solid #ced4da;
+    outline: none;
+}
+.form-group-edit textarea:focus{
+    box-shadow: 0 0 5px 3px var(--light-dark-2);
+}
+.form-group-edit input[type="date"]{
+    line-height: 20px;
+}
+/* Boton final */
+.popup form .btn-submit,
+.editar-form form .btn-submit{
+    margin-top: 15px;
+    padding: 5px 20px;
+    width: 200px;
+    height: 40px;
+    line-height: 30px;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.editar-form .edit-title{
+    display: block;
+    opacity: 1;
+}
+.popup form .btn-submit:hover,
+.editar-form form .btn-submit:hover
+{
+    background-color: #234a74;
+
+}
+.editar-form{
+    flex-direction: column;
+    width: 100%;
+}
+.editar-form form{
+    text-align: center;
+    width: 70%;
+}
+a#back-arrow{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.acciones-btn{
+    display: flex;
+}
+.btn-add.btn-report{
+    background-color: #DF192C;
+    margin-left: 10px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 animaciones                                */
+/* -------------------------------------------------------------------------- */
+.popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+.overlay.active{
+    background-color: rgba(0, 0, 0, .8);
+}
+.popup.active h3{
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+.popup.active .contenedor-imput{
+    animation: entradaInput .8s ease 1.2s forwards;
+}
+@keyframes entradaTitulo{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entradaInput{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:620px){
+    .contenedor-botones{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .btn-option{
+        margin-bottom: 20px;
+    }
+    .header h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .table{
+        box-shadow: none;
+    }
+    .table thead{
+        display: none;
+    }
+    .table tr{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #BDBDBD; 
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .table td[data-title]{
+        display: flex;
+        width: 100%;
+
+    }
+    .table td[data-title]::before{
+        content: attr(data-title);
+        width: 100px;
+        font-weight: 700;
+    }
+    .editar-form.d-flex form{
+        width: 100%;
+    }
+    .form-group-edit{
+        
+    }
+    .form-group-edit label{
+        width: 50%;
+    }
+    .edit-title{
+        text-align: center !important;
+    }
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>productos </title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Productos</h1>
+    </header>
+    <div class="contenedor">
+        <div class="add mx-width">
+            <a href="principal.html" class="btn-back">
+                <span><i class="fas fa-arrow-left"></i></span>
+            </a>
+            <button href="#" class="btn-add btn-abrir-popup" id="btn-abrir-popup"><span><i class="fas fa-plus-circle"></i></span><span>Agregar</span></button>
+        </div>
+        <div class="container">
+            <table class="table mx-width">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Nombre:">Teléfono</td>
+                        <td data-title="Descripción:">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</td>
+                        <td>
+                            <div class="btn-action">
+                                <button class="btn btn-edit"><i class="far fa-edit"></i></button>
+                                <button class="btn btn-delete"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Nombre:">Teléfono</td>
+                        <td data-title="Descripción:">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</td>
+                        <td>
+                            <div class="btn-action">
+                                <button class="btn btn-edit"><i class="far fa-edit"></i></button>
+                                <button class="btn btn-delete"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Nombre:">Teléfono</td>
+                        <td data-title="Descripción:">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</td>
+                        <td>
+                            <div class="btn-action">
+                                <button class="btn btn-edit"><i class="far fa-edit"></i></button>
+                                <button class="btn btn-delete"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Nombre:">Teléfono</td>
+                        <td data-title="Descripción:">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</td>
+                        <td>
+                            <div class="btn-action">
+                                <button class="btn btn-edit"><i class="far fa-edit"></i></button>
+                                <button class="btn btn-delete"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>agregar Producto</h3>
+                <form action="">
+                    <div class="contenedor-imput">
+                        <div class="form-group-edit">
+                            <label for="codigoProducto">Código de producto</label>
+                            <input type="text" id="codigoProducto" placeholder="Código del producto">
+                        </div>
+                        <div class="form-group-edit">
+                            <label for="nombreProducto">Nombre del producto</label>
+                            <input type="text" placeholder="Nombre del producto" id="nombreProducto">
+                        </div>
+                        <div class="form-group-edit">
+                            <label for="descripcion">Descripción del Producto</label>
+                            <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Descripción" maxlength="100"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn-submit"
+                    id="btn-submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/popup.js"></script>
+</body>
+
+</html>

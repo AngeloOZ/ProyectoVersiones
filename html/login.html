@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-cont" id="form-cont">
+            <div class="btn-op">
+                <div class="selection" id="selection"></div>
+                <button class="btn btn-ingreso active" id="btn-ingreso">INGRESAR</button>
+                <button class="btn btn-registro" id="btn-registro">REGISTRAR</button>
+            </div>
+            <form action="" class="form-iniciar" id="form-iniciar">
+                <h2 class="title">Bienvenido</h2>
+                <div class="form-group">
+                    <span class="icon"><i class="far fa-user"></i></span>
+                    <input type="text" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" name="" id="" placeholder="Contraseña">
+                </div>
+                <a href="#" class="enlace">¿Olvidaste tu contraseña?</a>
+                <input type="submit" class="btn btn-submit" value="INGRESAR">
+                <span class="register">¿Aún no te has registrado? <a href="#" id="a-Registrar">Crear una cuenta</a></span>
+            </form>
+            <form action="" class="form-registro" id="form-registro">
+                <h2 class="title">Registrate</h2>
+                <div class="form-group">
+                    <span class="icon"><i class="far fa-user"></i></span>
+                    <input type="text" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <span class="icon"><i class="far fa-envelope"></i></span>
+                    <input type="email" placeholder="Correo">
+                </div>
+                <div class="form-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" name="" id="" placeholder="Contraseña">
+                </div>
+                <div class="terms-cond">
+                    <input type="checkbox"><span class="terminos">Acepto los términos y condiciones</span>
+                </div>
+                <input type="submit" class="btn btn-submit" value="INGRESAR">
+                <span class="register">¿Ya tienes una cuenta? <a href="#" id="a-Iniciar">Iniciar sesión</a></span>
+            </form>
+        </div>
+    </div>
+    <script src="../vistas/js/main.js"></script>
+</body>
+</html>

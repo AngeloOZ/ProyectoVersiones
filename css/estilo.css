@@ -1,0 +1,152 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
+}
+body{
+    font-family: 'RobNunitooto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.container{
+    width: 100%;
+    height: 100vh; 
+    background: url('../img/fondo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-cont{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .2s ease-in ;
+}
+.btn-op{
+    margin: auto;
+    width: 90%;
+    height: 25px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #bbbbbb;
+}
+.btn{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+}
+.selection{
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    display: block;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #63afaf;
+    box-shadow: 0 0 10px 0px #63afaf;
+    transition: .2s ease-in;
+}
+.enlace{
+    color: #278FD1;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.btn-submit{
+    display: block;
+    margin: auto;
+    padding: 8px 25px;
+    border: 2px solid #63afaf;
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+    margin: 10px auto;
+}
+.btn-submit:hover{
+    box-shadow: 0 0 20px 2px #63afaf;
+}
+.title{
+    text-align: center;
+    font-weight: 600;
+    color: #1b1b1b;
+}
+.form-iniciar{
+    position: absolute;
+    margin-right: auto;
+    left: 20px;
+    transition: .3s ease .2s;
+}
+.form-group{
+    margin: auto;
+    width: 90%;
+    position: relative;
+    padding: 5px;
+    margin-bottom: .5rem;
+}
+.form-group input{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    padding: 8px 5px 8px 35px;
+    border-radius: 50px;
+    border: 1px solid #bbbbbb;
+    outline: none;
+}
+.form-group .icon{
+    color: #bbbbbb;
+    padding: 0.7rem;
+    position: absolute;
+    top: 0;
+    left: 1.1rem;
+}
+.form-group input:focus{
+    box-shadow: 0 0 10px 5px #bbbbbb;
+}
+.register{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.register a{
+    color: #278FD1;
+    font-weight: 400;
+    text-decoration: none;
+}
+.form-registro{
+    position: absolute;
+    top: 45px;
+    left: 400px;
+    transition: .3s ease .2s;
+}
+.terms-cond{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.terminos{
+    display: block;
+    font-size: 1.4rem;
+}
